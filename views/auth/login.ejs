@@ -1,0 +1,31 @@
+<section class="login flex justify-center pt-24"> 
+  <div class="flex h-1/2  items-center justify-center bg-gray-50 px-4 mt-8 w-2/3">
+    <div class="py-4"> 
+      <div>
+        <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          Sign in to your account
+        </h2>
+      </div>
+      <form action="/user/login" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div>
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" name="email" type="text" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="sr-only">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+        </div>
+        <div class="flex items-center justify-between">
+            <button
+                class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit">
+                Log In
+            </button>
+            <a class="inline-block align-baseline font-bold text-sm" href="/user/signup">
+                Don't have account?
+            </a>
+        </div>
+    </form>
+    </div>
+  </div>
+</section>

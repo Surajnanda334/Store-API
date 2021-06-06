@@ -1,0 +1,24 @@
+<section class="items-center px-2">
+  <div class="container flex items-center">
+    <div class="text-xl">PRODUCTS</div>
+    <div class="ml-4"><a href="/products/addProduct">Add</a></div>
+    <div class="ml-4"><a href="/products/updateProduct">Update</a></div>
+    <div class="ml-4"><a href="/products/deleteProduct">Delete</a></div>
+  </div>
+  <table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Product name</th> 
+            <th>@Price</th>
+        </tr>
+    </thead> 
+    <tbody>
+      <% for(var i = 0;i < products.length;i++){%>
+        <tr>
+            <td><%= products[i].productName%></td>
+            <td>₹<%= products[i].price%></td>
+        </tr>
+      <%}%>
+    </tbody>
+</table>
+</section>

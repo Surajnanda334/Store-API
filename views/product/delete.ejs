@@ -1,0 +1,24 @@
+<section class="login flex justify-center pt-24"> 
+  <div class="flex h-1/2  items-center justify-center bg-gray-50 px-4 mt-8 w-2/3">
+    <div class="py-4"> 
+      <div>
+        <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          Delete a PRODUCT
+        </h2>
+      </div>
+      <form action="/products/deleteProduct" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div>
+          <label for="delete" class="sr-only">Product Name</label>
+          <input id="delete" name="delete" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Product Name">
+        </div>
+        <div class="flex items-center justify-between mt-2">
+            <button
+                class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit">
+                Delete
+            </button>
+        </div>
+    </form>
+    </div>
+  </div>
+</section>

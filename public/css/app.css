@@ -1,0 +1,92 @@
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+.btn{
+  color: #ffffff;
+  background: #6771f7;
+}
+
+nav{
+  padding:20px ;
+  height: 100px;
+  color: #fff;
+  background: rgb(59, 59, 59);
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: #6771f7;
+}
+
+section.hero {
+  background: #e2e2e2;
+}
+
+.size {
+  background: #e2e2e2;
+}
+
+.add-to-cart {
+  border: 2px solid #6771f7;
+  transition: all 0.3s ease-in-out;
+}
+.add-to-cart:hover {
+  background: #6771f7;
+  border: 2px solid #232323;
+  color: #fff;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: #6771f7;
+  border: 2px solid #6771f7;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background: #484bfc;
+  border: 2px solid #232323;
+  color: #fff;
+}
+
+section.cart {
+  background: #e2e2e2;
+}
+section.cart .ammount {
+  color: #6771f7;
+}
+
+section.login {
+  background: #e2e2e2;
+  min-height: calc(100vh - 86px);
+}
+section.login a {
+  color: #8f8e8e;
+}
+section.login a:hover {
+  color: #484bfc;
+}
+table{
+	border-spacing: 0px;
+	width: 100%;
+}
+
+.table td, .table th{
+	padding: .75em;
+	vertical-align: top;
+	text-align: center;
+	border-bottom: 1px solid #212224;
+}
+
+.table tr:hover{
+	background-color:#a8f7e2 ;
+}
+
+.table .thead-dark th{
+	color: #fff;
+	background-color: #212224 ;
+	border-color: #212224;
+}
