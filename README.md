@@ -3,11 +3,11 @@
 
 # Instruction to run the Project
  
- Clone the repository
- Open terminal 
- cd to the deirectory
- hit npm install
- after inserting all the dependencies 
- hit npm start
+## Clone the repository
+## Open terminal 
+## cd to the deirectory
+## hit npm install
+## after inserting all the dependencies 
+## hit npm start
  
  
