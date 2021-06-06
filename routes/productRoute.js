@@ -17,7 +17,7 @@ router.post('/searchProduct',(req,res)=>{
         console.log(err);
     }
     else{
-      res.json.(docs)
+      res.json(docs)
         console.log("Result : ", docs);
     }
   })
