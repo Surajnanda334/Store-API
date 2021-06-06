@@ -48,7 +48,7 @@ router.post('/login',(req,res)=>{
         const token= jwt.sign({email:user[0].email,userId:user[0]._id },process.env.secret,{expiresIn:"1h"})
         productSchema.find()
         .then(user => {
-            res.render('product/products',{products:user})
+            res.render('product/adminProducts',{products:user})
         })
         .catch(err => {
             res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
@@ -59,7 +59,7 @@ router.post('/login',(req,res)=>{
         console.log(`${user[0].name} authenticated`);
         productSchema.find()
         .then(user => {
-            res.render('product/products',{products:user})
+            res.render('product/userProducts',{products:user})
         })
         .catch(err => {
             res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
