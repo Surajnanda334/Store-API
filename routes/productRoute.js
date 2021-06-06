@@ -22,8 +22,6 @@ router.post('/searchProduct',(req,res)=>{
     }
   })
  })
- 
-
 router.get('/updateProduct', (req,res)=>{
   res.render('product/update')
  })
@@ -41,7 +39,7 @@ router.post('/updateProduct', (req,res)=>{
     }
     productSchema.find()
         .then(user => {
-          res.render('product/products',{products:user})
+          res.render('product/adminProducts',{products:user})
         })
         .catch(err => {
             res.send({ message : err.message || "Error Occurred while retriving user information" })
@@ -62,14 +60,13 @@ router.post('/deleteProduct',(req,res)=>{
     }
     productSchema.find()
         .then(user => {
-          res.render('product/products',{products:user})
+          res.render('product/adminProducts',{products:user})
         })
         .catch(err => {
             res.send({ message : err.message || "Error Occurred while retriving user information" })
         })
 });
  })
-
  router.post('/addProduct',(req,res)=>{
   const product = new productSchema({
     productName:req.body.productName, 
@@ -80,7 +77,7 @@ router.post('/deleteProduct',(req,res)=>{
       .then(result=>{
         productSchema.find()
         .then(user => {
-          res.render('product/products',{products:user})
+          res.render('product/adminProducts',{products:user})
         })
         .catch(err => {
             res.send({ message : err.message || "Error Occurred while retriving user information" })
