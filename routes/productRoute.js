@@ -10,6 +10,20 @@ const router = express.Router();
 router.get('/addProduct',(req,res)=>{
   res.render('product/add')
  })
+router.post('/searchProduct',(req,res)=>{
+  var id = req.body.search
+  productSchema.findById(id, function (err, docs) {
+    if (err){
+        console.log(err);
+    }
+    else{
+      res.json.(docs)
+        console.log("Result : ", docs);
+    }
+  })
+ })
+ 
+
 router.get('/updateProduct', (req,res)=>{
   res.render('product/update')
  })
