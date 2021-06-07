@@ -6,8 +6,12 @@
 ## Clone the repository
 ## Open terminal 
 ## cd to the deirectory
-## hit npm install
+## hit 
+   ```
+   npm install
+   ```
 ## after inserting all the dependencies 
-## hit npm start
- 
+## hit
+  ```npm start
+  ```
  
