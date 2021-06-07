@@ -12,6 +12,7 @@
    ```
 ## after inserting all the dependencies 
 ## hit
-  ```npm start
+  ```
+  npm start
   ```
  
